@@ -8,7 +8,11 @@ defmodule PlusMinus do
     {n, _} = Integer.parse(n)
     solution(n, list, {0, 0, 0})
   end
-  
+  def solution(0, _ {pos, neg, zero}) when (pos + neg + zero) == 0 do
+    IO.puts 0
+    IO.puts 0
+    IO.puts 0
+  end
   def solution(0, _, { pos, neg, zero }) do
     total = pos + neg + zero
     IO.puts pos/total
